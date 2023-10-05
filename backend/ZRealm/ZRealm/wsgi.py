@@ -1,5 +1,5 @@
 """
-WSGI config for ZRealm project.
+WSGI config for zrealm project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ZRealm.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'zrealm.settings')
 
 application = get_wsgi_application()

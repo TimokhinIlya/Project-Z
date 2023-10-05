@@ -1,5 +1,5 @@
 """
-URL configuration for ZRealm project.
+URL configuration for zrealm project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,8 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, unclude
+from users.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('users/', unclude('users.urls')), # http://127.0.0.1:8000/users/
 ]
